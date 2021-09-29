@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:	#f1d4d4;
+    font-family: Georgia;
+}
+@font-face{
+    font-family: "CinzelDecorative";
+    src: url("../fonts/CinzelDecorative-Regular.otf");
+}
+
+@font-face{
+    font-family: "ElMessiri";
+    src: url("../fonts/ElMessiri-Regular.ttf");
+}
+
+@font-face{
+    font-family: "MedulaOne";
+    src: url("../fonts/MedulaOne-Regular.ttf");
+}
+
+.navbar-brand {
+    padding: 0px; /* firefox bug fix */
+}
+
+.navbar-brand>img {
+    padding: 15px; /* firefox bug fix */
+    width: 6em;
+    border-radius: 40%;
+}
+
+.nav-link{
+    font-family: 'ElMessiri';
+    font-size: 27px;
+    font-variant-caps: petite-caps;
+    color: #3B185F; 
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: #380f3f;
+}
