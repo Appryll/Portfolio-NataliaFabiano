@@ -1,11 +1,31 @@
+
+* {-moz-box-sizing: border-box; box-sizing: border-box;}
+
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body{
     background-color:	#f1d4d4;
-    font-family: Georgia;
+    min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
+
+
+/***************************** footer*****************************/
+
+    #contact {
+        background: #F6F6F6;
+    }
+
+    .copyright {position: absolute; bottom: 0; left: 0; right: 0}
+
+/***************************** fonts *****************************/    
+    
+
 @font-face{
     font-family: "CinzelDecorative";
     src: url("../fonts/CinzelDecorative-Regular.otf");
@@ -42,3 +62,366 @@ body{
     text-decoration: underline;
     color: #380f3f;
 }
+
+#header img{
+    width: 100%;
+    margin-top: -9%; /* cambiar en responsive*/
+    height: 764px;
+    /* background-color: rgba(255, 105, 180, 0.822); */
+    /* background-color: #FEC260; */
+    /* background-color: rgb(254, 236, 183); */
+    background-image: url("../img/istockphoto-827208572-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**************************** à propos de moi ***********************************/
+#propos{
+    background-color: #ac8daf;
+    height: 410px;
+    padding-top: 50px;
+}
+
+#propos-img{
+    width: 18%;
+    border-radius: 45% 45% 45% 45%;
+    margin-top: -6%;
+    /* margin-left: -18%;
+    position: relative; */
+}
+
+#propos p{
+    color: aliceblue;
+    font-size: 23px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-style: italic;
+    opacity: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/**************************** Competences ***********************************/
+#competences{
+    background-color: #ddb6c6;
+    height: 760px;
+}
+#competences>a{
+    color:aliceblue;
+    border-style: double;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-left: 80%;
+    opacity: 0;
+}
+
+#competences>a:hover{
+    background-color: cadetblue;
+}
+
+#competences-img{
+    width: 18%;
+    border-radius: 45% 45% 45% 45%;
+    margin-top: -3%;
+    margin-left: 100%;
+}
+
+    /***SKILLS***/
+    
+    fieldset{
+       margin-left: 5%;
+       margin-top: 2%;
+    }
+
+    .compet1, .compet2, .compet3, .compet4, .compet5, .compet6, .compet7, .compet8, .compet9{
+        opacity: 0;
+    }
+    
+    ul.hover_block li{
+        list-style:none;
+        float:left;
+        background: #fff;
+        padding: 10px;
+        width: 180px; 
+        position: relative;
+        margin-right: 20px; 
+        margin-top: 15px;
+    }
+    
+    ul.hover_block li a{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 160px;
+        /* width: 268px; */
+        padding: 16px;
+        color: #000;
+        font: 15px Helvetica, Arial, sans-serif;
+    }
+    
+    ul.hover_block li a{
+        text-decoration: none; 
+    }
+    
+    ul.hover_block li .img-skills{
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+        width: 100%;
+        border-radius: 15%;
+    }
+    
+    .checked{
+        color: orange;
+    }
+    
+    .checkedlove{
+        color: red;
+    }
+
+    .renglon2{
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+
+    .renglon3{
+        margin-left: 21%;
+    }
+    
+/******************************** formation ***********************/
+
+/* .cv{
+    position: absolute;
+    top: 70%;
+    border: groove;
+    padding: 1%;
+}
+
+.img-cv:hover{
+    width: 30%;
+    margin-left: 33%;
+}
+    
+.img-cv{
+    margin-left: 37%;
+}
+
+.cv p{
+    font-size: 13px;
+} */
+
+h5{
+    text-decoration: underline;
+}
+
+/* The actual timeline (the vertical ruler) */
+ .timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  } 
+  
+  /* The actual timeline (the vertical ruler) */
+   .timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -8px;
+  } 
+
+  /* Container around content */
+   .container-formation{
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 52%;
+  } 
+
+  .container-formation:hover{
+    background-color: #ffeb3b30;
+    border-radius: 15%;
+  }
+  
+  /* The circles on the timeline */
+   .container-formation::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 7px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+   
+  /* Place the container to the left */
+   .left{
+    left: -2%;
+  } 
+  
+  /* Place the container to the right */
+   .right{
+    left: 49%;
+  }
+   
+  /* Add arrows to the left container (pointing right) */
+   .left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  } 
+  
+  /* Add arrows to the right container (pointing left) */
+   .right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  } 
+  
+  /* Fix the circle for containers on the right side */
+   .right::after{
+    left: -1%;
+  }
+
+  .left::after{
+    right: -1%;
+  } 
+  
+  /* The actual content */
+   .content{
+    padding: 20px;
+    background-color: floralwhite;
+    position: relative;
+    border-radius: 6px;
+  } 
+
+  .content>p{
+    text-align: justify;
+  }
+
+  .content>h6{
+    text-align: justify;
+  }
+
+
+  .cv {
+    position: absolute;
+    top: 76%;
+    left: 15%;
+    /* transform: translate(-50%, -50%); */
+    /* height: 70px;
+    width: 70px; */
+    /* background: blueviolet; */
+    /* border-radius: 50%; */
+    /* overflow: hidden; */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+    border-style: groove;
+}
+
+.cv:hover{
+    border-style: none;
+}
+
+ 
+/* .cv a {
+    /* width: 120px; */
+    /* height: 120px; */
+    /* background: #ac8daf; */
+    /* color: black; */
+    /* text-align: center; */
+    /* text-decoration: none;
+    font-size: 25px; */
+    /* border-radius: 50%; */
+ 
+/* }  */
+
+  /* .cv a::before {
+    font-family: FontAwesome; */
+    /* content: 'img/save.png'; */
+    /* display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle; */
+  
+    /* content: "\f019";
+    position: absolute;
+    right: 13px;
+    top: 6px;  
+    transition: all ease-in-out .3s;
+ } */
+ /* .cv a::after{
+    
+    content: "\f019";
+    font-family: FontAwesome;
+    right: 13px;
+    top: -30px;  
+    position: absolute;
+ }
+
+  .cv a:hover::before{
+      margin-top: 120px;
+  }
+
+  .cv a:hover::after{
+    margin-top: 6px;
+} */
+
+
+/**************************** mesProyects *******************************/
+
+.card{
+    width: 25%;
+    padding: 1;
+    margin-right: 2%;
+    background-color: #E4D3CF;  
+    height: 450px;  
+}
+
+.imgGit{
+    width: 15%;
+    float: right;
+}
+.imgHome{
+    width: 15%;
+    float: left;
+}
+
+.imgHome:hover{
+    opacity: 65%;
+}
+
+.imgGit:hover{
+    opacity: 65%;
+}
+
+#img-mobile-ektor{
+    width: 56%;
+    margin-left: 22%;
+}
+
+.card-img-top:hover{
+    background: radial-gradient(rgba(200, 255, 0, 0.644), transparent);
+    transform: translateY(10px);
+}
+
+
