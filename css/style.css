@@ -118,7 +118,13 @@ body{
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
+    .nav-link{
+        font-size: 16px;
+        direction: rtl;
+    }
+    .navbar-brand>img {
+        width: 85px;
+    }
     
 }
 
@@ -517,7 +523,61 @@ h5{
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
+    h6{
+        font-size: 13px;
+    }
+
+    h5{
+        font-size: 13px;
+    }
+
+    .content>p {
+        font-size: 11px;
+    }
+
+    .left::after {
+        right: -2%;
+    }
+
+    .right::after {
+        left: -3%;
+    }
+
+    .content {
+        padding: 4px;
+    }
+
+    .left::before{
+        right: 18px;
+    
+      } 
+
+    .left>.content{
+        width: 109%;
+        right: 5%;
+    }
+    .right::before{
+        left: 14px;
+      } 
+
+    .right>.content{
+        width: 109%;
+        right: 5%;
+    }
+
+    .cv {
+        position: absolute;
+        top: 78%;
+        left: 3%;
+    }
+
+    .cv a{
+        font-size: 13px
+    }
+    .cv a img{
+        width: 50px;
+
+    }
     
 }
 
