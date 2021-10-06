@@ -9,23 +9,54 @@ html{
 body{
     background-color:	#f1d4d4;
     min-height: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
-
 
 /***************************** footer*****************************/
 
-    #contact {
-        background: #F6F6F6;
-    }
+#contact {
+    background: #F6F6F6;
+}
 
-    .copyright {position: absolute; bottom: 0; left: 0; right: 0}
+.fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
+    font-size: 3em;
+}
+
+.copyright {
+    position: absolute; bottom: 0; left: 0; right: 0
+}
+
+/* écrans de bureau extra larges */
+@media only screen and (min-device-width : 1600px) and (max-device-width : 1925px) {
+  
+
+}
+/* Laptop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    
+}
+
+/* Mobile  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .copyright{
+        font-size: 10px;
+    }
+    .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
+        font-size: 1em;
+    }
+}
+
 
 /***************************** fonts *****************************/    
     
-
 @font-face{
     font-family: "CinzelDecorative";
     src: url("../fonts/CinzelDecorative-Regular.otf");
@@ -41,13 +72,13 @@ body{
     src: url("../fonts/MedulaOne-Regular.ttf");
 }
 
-.navbar-brand {
-    padding: 0px; /* firefox bug fix */
-}
+/* .navbar-brand {
+    padding: 0px; 
+} */
 
 .navbar-brand>img {
     padding: 15px; /* firefox bug fix */
-    width: 6em;
+    width: 100px;
     border-radius: 40%;
 }
 
@@ -65,27 +96,56 @@ body{
 
 #header img{
     width: 100%;
-    margin-top: -9%; /* cambiar en responsive*/
-    height: 764px;
+    margin-top: -12%; 
+    /* height: 764px; */
     /* background-color: rgba(255, 105, 180, 0.822); */
     /* background-color: #FEC260; */
     /* background-color: rgb(254, 236, 183); */
-    background-image: url("../img/istockphoto-827208572-612x612.jpg");
+    /* background-image: url("../img/istockphoto-827208572-612x612.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
+
+/* écrans de bureau extra larges */
+@media only screen and (min-device-width : 1600px) and (max-device-width : 1925px) {
+  
+
+}
+/* Laptop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    
+}
+
+/* Mobile  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #header img {
+        margin-top: -20%;
+    }
+    .nav-link{
+        font-size: 10px;
+        direction: rtl;
+    }
+}
+
+
 
 /**************************** à propos de moi ***********************************/
 #propos{
     background-color: #ac8daf;
     height: 410px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 #propos-img{
     width: 18%;
     border-radius: 45% 45% 45% 45%;
-    margin-top: -6%;
+    margin-top: -3%;
     /* margin-left: -18%;
     position: relative; */
 }
@@ -100,6 +160,29 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+/* écrans de bureau extra larges */
+@media only screen and (min-device-width : 1600px) and (max-device-width : 1925px) {
+  
+
+}
+/* Laptop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    
+}
+
+/* Mobile  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .navbar-brand>img {
+        width: 60px;
+    }
+}
 
 /**************************** Competences ***********************************/
 #competences{
@@ -188,6 +271,41 @@ body{
     .renglon3{
         margin-left: 21%;
     }
+
+    /* écrans de bureau extra larges */
+@media only screen and (min-device-width : 1600px) and (max-device-width : 1925px) {
+  
+
+}
+/* Laptop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    
+}
+
+/* Mobile  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+    ul.hover_block li {
+        width: 87px;
+        height: 87px;
+    }
+   /* .fa{
+        display: none;
+        font-size: 1px;
+    } */
+
+    ul.hover_block li a {
+        font: 8px Helvetica, Arial, sans-serif;
+    }
+    
+}
     
 /******************************** formation ***********************/
 
@@ -324,7 +442,6 @@ h5{
     text-align: justify;
   }
 
-
   .cv {
     position: absolute;
     top: 76%;
@@ -343,6 +460,7 @@ h5{
     border-style: none;
 }
 
+.cv-mob{display: none;}
  
 /* .cv a {
     /* width: 120px; */
@@ -387,6 +505,88 @@ h5{
 } */
 
 
+/* écrans de bureau extra larges */
+@media only screen and (min-device-width : 1600px) and (max-device-width : 1925px) {
+  
+
+}
+/* Laptop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    
+}
+
+/* Mobile  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    h6{
+        font-size: 11px;
+    }
+
+    h5{
+        font-size: 11px;
+    }
+
+    .content>p {
+        font-size: 9px;
+    }
+
+    .left::after {
+        right: -3%;
+    }
+
+    .right::after {
+        left: -6%;
+    }
+
+    .content {
+        padding: 4px;
+    }
+
+    .left::before{
+        right: 18px;
+    
+      } 
+
+    .left>.content{
+        width: 125%;
+        right: 14%;
+    }
+    .right::before{
+        left: 14px;
+      } 
+
+    .right>.content{
+        width: 125%;
+        right: 11%;
+    }
+
+    .cv{display: none;}
+
+    .cv-mob{
+        position: absolute;
+        top: 82%;
+        left: 3%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+        border-style: groove;
+        display: initial;
+    }
+
+    .cv-mob a{
+        font-size: 12px;
+    }
+
+    .fa-download{
+        font-size: 15px;
+    }
+    
+    
+}
+
 /**************************** mesProyects *******************************/
 
 .card{
@@ -424,4 +624,24 @@ h5{
     transform: translateY(10px);
 }
 
+/* écrans de bureau extra larges */
+@media only screen and (min-device-width : 1600px) and (max-device-width : 1925px) {
+  
 
+}
+/* Laptop */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    
+}
+
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  
+    
+}
+
+/* Mobile  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    
+}
