@@ -38,6 +38,10 @@ body{
     .copyright{
         font-size: 14px;
     }
+
+    .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
+        font-size: 2em;
+    }
 }
 
 /* Tablet */
@@ -45,7 +49,10 @@ body{
     .copyright{
         font-size: 13px;
     }
-    
+
+    .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
+        font-size: 2em;
+    }
 }
 
 /* Mobile  */
@@ -182,13 +189,16 @@ body{
 }
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
-    
+    #propos p{
+        font-size: 21px;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
-    
+    #propos p{
+        font-size: 19px;
+    }
 }
 
 /* Mobile  */
@@ -196,6 +206,10 @@ body{
 
     .navbar-brand>img {
         width: 60px;
+    }
+
+    #propos p{
+        font-size: 15px;
     }
 }
 
@@ -294,19 +308,65 @@ body{
 }
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
-    
+    ul.hover_block li {
+        padding: 10px;
+        width: 135px;
+        height: 135px;
+    }
+
+    #competences{
+        height: 640px;
+    }
+
+    .renglon1{
+        margin-left: 4%;
+    }
+
+    .renglon2{
+        margin-left: 4%;
+    }
+
+    .renglon3 {
+        margin-left: 4%;
+    }
+
+    #competences>a{
+        margin-left: 75%;
+        margin-top: 10%;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
-    
+    ul.hover_block li {
+        padding: 6px;
+        width: 130px;
+        height: 130px;
+    }
+
+    #competences{
+        height: 700px;
+    }
+
+    .renglon1{
+        margin-left: 4%;
+    }
+
+    .renglon2{
+        margin-left: 4%;
+    }
+
+    .renglon3 {
+        margin-left: 22%;
+    }
+
+    #competences>a{
+        margin-left: 70%;
+    }
 }
 
 /* Mobile  */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-
     ul.hover_block li {
         width: 87px;
         height: 87px;
@@ -319,7 +379,26 @@ body{
     ul.hover_block li a {
         font: 8px Helvetica, Arial, sans-serif;
     }
+
+    #competences{
+        height: 600px;
+    }
     
+    #competences>a{
+        display: none;
+    }
+
+    .renglon1{
+        margin-left: 4%;
+    }
+
+    .renglon2{
+        margin-left: 5%;
+    }
+
+    .renglon3 {
+        margin-left: 18%;
+    }
 }
     
 /******************************** formation ***********************/
