@@ -763,6 +763,25 @@ h5{
 
 /* Mobile  */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    
+   .card-body{
+    padding: 1rem 0rem;
+   }
+
+   .card-body>h5{
+       font-size: 13px;
+   }
+    .card-body>p{
+        display: none;
+    }
+
+    .card{
+        height: 175px;
+        width: 33%;
+    }
+
+    .imgGit, .imgHome{
+        width: 18%;
+    }
+
     
 }
