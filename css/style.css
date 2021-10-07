@@ -35,12 +35,16 @@ body{
 }
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
-    
+    .copyright{
+        font-size: 14px;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
+    .copyright{
+        font-size: 13px;
+    }
     
 }
 
@@ -113,7 +117,13 @@ body{
 }
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
-    
+    .nav-link{
+        font-size: 22px;
+    }
+
+    .navbar-brand>img {
+        width: 82px;
+    }
 }
 
 /* Tablet */
@@ -138,7 +148,6 @@ body{
         direction: rtl;
     }
 }
-
 
 
 /**************************** à propos de moi ***********************************/
@@ -518,21 +527,16 @@ h5{
 }
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
-    
-}
-
-/* Tablet */
-@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
     h6{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     h5{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .content>p {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .left::after {
@@ -550,19 +554,20 @@ h5{
     .left::before{
         right: 18px;
     
-      } 
+    } 
 
     .left>.content{
-        width: 109%;
-        right: 5%;
+        width: 105%;
+        right: 2%;
     }
+    
+    .right>.content{
+        width: 105%;
+        right: 4%;
+    }
+
     .right::before{
         left: 14px;
-      } 
-
-    .right>.content{
-        width: 109%;
-        right: 5%;
     }
 
     .cv {
@@ -574,9 +579,65 @@ h5{
     .cv a{
         font-size: 13px
     }
+
     .cv a img{
         width: 50px;
+    }
+    
+}
 
+/* Tablet */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    h6{
+        font-size: 14px;
+    }
+
+    h5{
+        font-size: 13px;
+    }
+
+    .content>p {
+        font-size: 12px;
+    }
+
+    .left::after {
+        right: -2%;
+    }
+
+    .right::after {
+        left: -3%;
+    }
+
+    .content {
+        padding: 4px;
+    }
+
+    .left::before{
+        right: 18px;
+    
+    } 
+
+    .left>.content, .right>.content{
+        width: 109%;
+        right: 5%;
+    }
+
+    .right::before{
+        left: 14px;
+    }
+
+    .cv {
+        position: absolute;
+        top: 78%;
+        left: 3%;
+    }
+
+    .cv a{
+        font-size: 13px
+    }
+
+    .cv a img{
+        width: 50px;
     }
     
 }
