@@ -752,13 +752,34 @@ h5{
 }
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    .card {
+        width: 30%;
+        height: 410px;
+    }
+
+    .card-body>h5{
+        font-size: 18px;
+    }
     
+    .card-body>p{
+        font-size: 16px;
+    }
 }
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-  
+    .card {
+        width: 31%;
+        height: 370px;
+    }
+
+    .card-body>h5{
+        font-size: 18px;
+    }
     
+    .card-body>p{
+        font-size: 14px;
+    }
 }
 
 /* Mobile  */
