@@ -166,8 +166,13 @@ body{
 /**************************** à propos de moi ***********************************/
 #propos{
     background-color: #ac8daf;
-    height: 410px;
+    height: 430px;
     /* padding-top: 50px; */
+}
+
+#propos a{
+    text-decoration: none;
+    color: aliceblue;
 }
 
 #propos-img{
@@ -180,10 +185,10 @@ body{
 
 #propos p{
     color: aliceblue;
-    font-size: 23px;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-style: italic;
+    font-size: 26px;
+    margin-left: 0%;
+    margin-right: 0%;
+    /* font-style: italic; */
     opacity: 0;
     font-family: 'Playfair Display', serif;
 }
@@ -196,12 +201,16 @@ body{
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
     #propos p{
-        font-size: 21px;
+        font-size: 22px;
     }
 }
 
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    #propos{
+        height: 350px;
+    }
+
     #propos p{
         font-size: 19px;
     }
@@ -209,6 +218,9 @@ body{
 
 /* Mobile  */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #propos{
+        height: 310px;
+    }
 
     .navbar-brand>img {
         width: 60px;
@@ -222,7 +234,7 @@ body{
 /**************************** Competences ***********************************/
 #competences{
     background-color: #ddb6c6;
-    height: 760px;
+    height: 780px;
 }
 #competences>a{
     color:aliceblue;
