@@ -12,6 +12,8 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
+    min-width: 320px;
+    max-width: 1024px;
 }
 
 /***************************** footer*****************************/
@@ -96,7 +98,7 @@ body{
 
 .nav-link{
     font-family: 'ElMessiri';
-    font-size: 27px;
+    font-size: 32px;
     font-variant-caps: petite-caps;
     color: #3B185F; 
 }
@@ -114,7 +116,7 @@ body{
 /* Laptop */
 @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
     .nav-link{
-        font-size: 22px;
+        font-size: 27px;
     }
 
     .navbar-brand>img {
@@ -125,7 +127,7 @@ body{
 /* Tablet */
 @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
     .nav-link{
-        font-size: 17px;
+        font-size: 22px;
         /* direction: rtl; */
     }
     .navbar-brand>img {
@@ -151,7 +153,7 @@ body{
         margin-left: -50%;
     }
     .nav-link{
-        font-size: 10px;
+        font-size: 15px;
         /* direction: rtl; */
     }
 
@@ -178,7 +180,7 @@ body{
         margin-left: -50%;
     }
     .nav-link{
-        font-size: 10px;
+        font-size: 15px;
         /* direction: rtl; */
     }
 
