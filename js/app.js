@@ -25,6 +25,8 @@ var app = {};
 		$('#competences-img').animate({marginLeft:'80%'}, 1000);
 	}
 
+/* Fx competences */
+
 	app.block = function(){
 		$('.compet1').animate({opacity:1}, 800,
 			function(){$('.compet2').animate({opacity:1}, 600,
@@ -38,17 +40,12 @@ var app = {};
 											function(){$('.compet7').animate({opacity:1},300)})})})})})})})})});
 	}
 
-	// app.tiritando = function(){
-	// 	$('#competences').children('a').hover(function(){
-	// 		$(this).animate({'background-color': 'cadetblue'})
-	// 		// setInterval(function(){
-	// 		// 	$(this).fadeOut(100,'swing');
-	// 		// 	$(this).fadeIn(120,'linear');
-	// 		// 	}, 1000);	
-	// 		// })
-	// }
+	app.final=function(){
+		$(window).off("scroll")
+	}
 
-	
+/* Fx mes projets */
+
 	app.card = function(){
 		$('.card').hide();
 		$('#card1').fadeIn(1000, function(){
@@ -60,12 +57,14 @@ var app = {};
 						})})})})})
 	}
 
-	app.late = function(){
-		setInterval(function(){
-				$('#img-index').fadeOut(1000,'swing');
-				$('#img-index').fadeIn(1200,'linear');
-				}, 2500);	
-	}
+	// app.late = function(){
+	// 	setInterval(function(){
+	// 			$('#img-index').fadeOut(1000,'swing');
+	// 			$('#img-index').fadeIn(1200,'linear');
+	// 			}, 2500);	
+	// }
+
+/* Fx Skills competences */
 
 	app.animate = function(){
 		$(".img-skills").hover(function(){
@@ -78,14 +77,10 @@ var app = {};
 		});
 	}
 
-	
-
 	$document.ready(function(){
 		app.card();
 		app.animate();
-		app.late();
-		// app.tiritando();
-		
+		// app.late();	
 	});
 
 	$(window).scroll(function() {
@@ -93,8 +88,7 @@ var app = {};
 		app.text();
 		app.imagecomputer();
 		app.block();
-		
+		app.final();
 	});
-
 
 })(jQuery);
