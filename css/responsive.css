@@ -3,6 +3,7 @@
     /***************************** footer*****************************/
     .copyright{
         font-size: 12px;
+        position: absolute; bottom: 0; left: 0; right: 0
     }
     .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
         font-size: 1.25em;
@@ -175,7 +176,9 @@
     /***************************** footer*****************************/
     .copyright{
         font-size: 13px;
+        position: absolute; bottom: 0; left: 0; right: 0
     }
+
     .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github {
         font-size: 1.5em;
     }
@@ -336,6 +339,7 @@
     /***************************** footer*****************************/
     .copyright{
         font-size: 14px;
+        position: absolute; bottom: 0; left: 0; right: 0
     }
 
     .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
@@ -493,6 +497,7 @@
     /***************************** footer*****************************/
     .copyright{
         font-size: 14px;
+        position: absolute; bottom: 0; left: 0; right: 0
     }
 
     .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
@@ -640,6 +645,7 @@
     /***************************** footer*****************************/
     .copyright{
         font-size: 14px;
+        position: absolute; bottom: 0; left: 0; right: 0
     }
 
     .fa-envelope, .fa-telegram, .fa-twitter, .fa-linkedin, .fa-github{
