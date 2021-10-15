@@ -1,6 +1,10 @@
 /* X-Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
     /***************************** footer*****************************/
+    html, body {
+        overflow-x: hidden;
+    }
+    
     .copyright{
         font-size: 12px;
         position: absolute; bottom: 0; left: 0; right: 0
