@@ -203,7 +203,7 @@
         display: flex;
         flex-direction: row;
         padding-left: 0;
-        margin-top: -8%;
+        margin-top: -11%;
         margin-right: 8%;
         margin-bottom: 0;
         justify-content: flex-end;
@@ -338,7 +338,7 @@
     }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, REDMI, 768px and up)*/
 @media (min-width: 768px) { 
     /***************************** footer*****************************/
     .copyright{
@@ -419,16 +419,20 @@
     }
 
     /******************************** formation ***********************/
+    .timeline{
+        margin-top: 10%;
+    }
+
     h6{
-        font-size: 16px;
+        font-size: 24px;
     }
 
     h5{
-        font-size: 15px;
+        font-size: 24px;
     }
 
     .content>p {
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .left::after {
@@ -449,15 +453,34 @@
     } 
 
     .left>.content, .right>.content{
-        width: 110%;
-        right: 5%;
+        width: 106%;
+        right: 3%;
     }
 
     .right::before{
         left: 14px;
     }
 
+    .cv{display: none;}
+
     .cv-mob{
+        position: absolute;
+        top: 75%;
+        left: 3%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+        border-style: groove;
+        display: initial;
+    }
+
+    .cv-mob a{
+        font-size: 25px;
+    }
+
+    .fa-download{
+        font-size: 25px;
+    } 
+
+    /* .cv-mob{
         display: none;
     }
 
@@ -474,24 +497,24 @@
 
     .cv a img{
         width: 50px;
-    }
+    } */
 
     /**************************** mesProyects *******************************/
     .card {
         width: 31%;
-        height: 370px;
+        height: 480px;
     }
 
     .card-body>h5{
-        font-size: 18px;
+        font-size: 23px;
     }
     
     .card-body>p{
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .imgGit, .imgHome{
-        width: 25%;
+        width: 23%;
     }
 
 }
