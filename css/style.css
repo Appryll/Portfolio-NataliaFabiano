@@ -15,8 +15,6 @@ body{
     min-width: 576px; 
 }
 
-
-
 /***************************** footer*****************************/
 
 #contact {
@@ -76,7 +74,7 @@ body{
 /**************************** à propos de moi ***********************************/
 #propos{
     background-color: #ac8daf;
-    height: 600px;
+    height: 478px;
 }
 
 #propos a{
@@ -85,7 +83,7 @@ body{
 }
 
 #propos-img{
-    width: 18%;
+    width: 15%;
     border-radius: 45% 45% 45% 45%;
     margin-top: -3%;
     margin-left: -20%;
@@ -93,7 +91,7 @@ body{
 
 #propos p{
     color: aliceblue;
-    font-size: 32px;
+    font-size: 30px;
     opacity: 0;
     font-family: 'Playfair Display', serif;
 }
@@ -119,7 +117,7 @@ body{
 }
 
 #competences-img{
-    width: 18%;
+    width: 15%;
     border-radius: 45% 45% 45% 45%;
     margin-top: -3%;
     margin-left: 100%;
