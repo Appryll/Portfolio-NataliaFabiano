@@ -16,7 +16,7 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
-    /* min-width: 576px; */
+    min-width: 576px; 
 }
 
 /***************************** footer*****************************/
